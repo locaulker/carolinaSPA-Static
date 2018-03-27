@@ -8,3 +8,32 @@
 .navigation {
   background-color: #8ed3cc;
 }
+
+nav.main-nav {
+  background-image: url('../img/border_horizontal.png'), url('../img/border_horizontal.png');
+  background-repeat: repeat-x;
+  background-position: 0 top , 0 bottom;
+}
+
+nav.main-nav .nav-item {
+  border-radius: 20px;
+  transition: background-color .3s ease;
+}
+nav.main-nav .nav-item:hover {
+  background-color: #39a69b;
+  border-radius: 20px;
+}
+
+nav.main-nav .nav-link {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: 2px;
+  font-family: 'Raleway', 'Helvetica Neue', sans-serif;
+}
+
+.carousel-item h3 {
+  font-weight: 100;
+  font-size: 3rem;
+  font-family: 'Helvetica Neue', sans-serif;
+}
