@@ -1,4 +1,7 @@
 /*** Add your styles here **/
+body {
+  background-color: #f8f8f8;
+}
 h2 {
   font-size: 2.4rem;
 }
@@ -17,7 +20,12 @@ h2 span, h3 span {
   display: block;
   color: #e882a8;
 }
-
+h3 {
+  tab-size: 2rem;
+}
+h3 span {
+  font-size: 3rem;
+}
 
 
 /* Section: Navigation */
@@ -48,16 +56,49 @@ nav.main-nav .nav-link {
   font-family: 'Raleway', 'Helvetica Neue', sans-serif;
 }
 
-/* Carousel */
+/* Section: Carousel */
 .carousel-item h3 {
-  font-weight: 100;
+  font-weight: 200;
+  line-height: 2.4rem;
   font-size: 3rem;
-  font-family: 'Raleway', 'Helvetica Neue', sans-serif;
+  font-family: 'Lato', 'Helvetica Neue', sans-serif;
   color: #fff;
 }
-/* New Website */
+/* Section: New Website */
+.new-website {
+  background-color: #f1f1f1;
+}
 .new-website p {
   font-size: 1.6rem;
   color: #979797;
   font-family: 'Lato', sans-serif;
+}
+
+/* Section: Image Links */
+.image-links img {
+  border: 6px solid #fff;
+  transition: transform .4s ease-in;
+}
+
+.image-links img:hover {
+  -webkit-transform: scale(1.1) rotate(5deg);
+    -ms-transform: scale(1.1) rotate(5deg);
+      -moz-transform: scale(1.1) rotate(5deg);
+        transform: scale(1.1) rotate(5deg);
+}
+
+.image-info {
+  background-color: #fff;
+  margin-top: -50px;
+}
+
+.image-info .btn-success {
+  background-color: #e082a8;
+  border: none;
+  border-radius: 0 0 5px 5px;
+  transition: background-color .4s ease-in;
+}
+
+.image-info .btn-success:hover {
+  background-color: #ca5b88;
 }
