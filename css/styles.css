@@ -137,3 +137,65 @@ nav.main-nav .nav-link {
 .table-hover .table-danger:hover {
   background-color: #c882a8;
 }
+
+/* Section: Products */
+.products .card {
+  border: none;
+}
+.products .card a {
+  color: #333;
+}
+.products .card a:hover {
+  text-decoration: none;
+}
+.products .card h3 {
+  font-size: 1.3rem;
+  color: #e082a8;
+}
+.products .card p {
+  font-size: .8rem;
+  padding: 0 10px;
+}
+.products .card p.price {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Section: Appointment */
+.appointment {
+  background-image: url('../img/bg_appointment.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+}
+@media (min-width: 992px) {
+  background-size: cover;
+  p {
+    text-align: center;
+  }
+}
+.appointment h3 {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 100;
+  line-height: 3rem;
+}
+.appointment p {
+  line-height: 1.6rem;
+}
+.appointment .btn-primary {
+  background-color: #8ed3cc;
+  border: none;
+  border-radius: 0 0 5px 5px;
+  padding: .8rem 3.5rem;
+}
+.appointment .btn-primary:hover {
+  background-color: #68beb5;
+}
+
+/* Section: Site Footer */
+.site-footer p.copyright {
+  color: #979797;
+}
