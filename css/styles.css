@@ -1,6 +1,7 @@
 /*** Add your styles here **/
 body {
   background-color: #f8f8f8;
+  font-family: 'Lato', 'Helvetica Neue', sans-serif;
 }
 h2 {
   font-size: 2.4rem;
@@ -101,4 +102,38 @@ nav.main-nav .nav-link {
 
 .image-info .btn-success:hover {
   background-color: #ca5b88;
+}
+
+/* Business Hours */
+.business-hours {
+  background-color: #8ed3cc;
+  color: #fff;
+}
+.business-hours h2 {
+  color: #fff;
+}
+
+.bg-hours {
+  background-image: url('../img/bg_hours.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 300px;
+}
+.table {
+  border: 1px solid #e882a8;
+}
+.table td,
+.table thead th {
+  border: none;
+}
+.table tbody tr td {
+  padding: .35rem;
+}
+.table tr td:first-child {
+  text-align: left;
+  padding-left: 20px;
+}
+.table-danger,
+.table-hover .table-danger:hover {
+  background-color: #c882a8;
 }
