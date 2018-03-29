@@ -196,9 +196,7 @@ nav.main-nav .nav-link {
 }
 @media (min-width: 992px) {
   background-size: cover;
-  p {
-    text-align: center;
-  }
+  p { text-align: center; }
 }
 .appointment h3 {
   color: #fff;
