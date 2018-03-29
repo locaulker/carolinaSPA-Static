@@ -27,6 +27,30 @@ h3 {
 h3 span {
   font-size: 3rem;
 }
+/* Social Menu */
+.socials ul {
+  list-style: none;
+}
+.socials ul li {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+}
+.socials ul li a::before {
+  font-family: 'FontAwesome';
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 0.4rem;
+  content: '\f08e';
+  color: #e082e8;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.8rem;
+}
+.socials ul li a[href*="facebook.com"]::before {content: '\f230';}
+.socials ul li a[href*="twitter.com"]::before {content: '\f081';}
+.socials ul li a[href*="instagram.com"]::before {content: '\f16d';}
+.socials ul li a[href*="pinterest.com"]::before {content: '\f0d2';}
+.socials ul li a[href*="youtube.com"]::before {content: '\f16a';}
 
 
 /* Section: Navigation */
