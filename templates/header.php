@@ -8,13 +8,16 @@
     <link rel="stylesheet" href="css/fontawesome.css">
     <link href="https://fonts.googleapis.com/css?family=Italianno|Lato:100,300,700,900|Raleway:100,200,300,400,600" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <title>Carolina SPA | <?php echo $title; ?></title>
   </head>
   <body>
     <!-- Section: Header section -->
     <header class="site-header container">
       <div class="row justify-content-between">
         <div class="col-8 offset-2 col-lg-4 offset-lg-0">
-          <img src="img/logo.svg" class="img-fluid d-block mx-auto" alt="">
+          <a href="/">
+            <img src="img/logo.svg" class="img-fluid d-block mx-auto" alt="">
+          </a>
         </div>
         <div class="col-12 col-lg-4">
           <nav class="socials text-center text-md-right pt-3">

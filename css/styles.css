@@ -221,3 +221,32 @@ nav.main-nav .nav-link {
 .site-footer p.copyright {
   color: #979797;
 }
+
+/* Internal Pages */
+.hero {
+  position: relative;
+}
+.hero h2 {
+  position: absolute;
+  background-color: #8ed3cc;
+  bottom: 2rem;
+  right: 0;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 30px 0 0 30px;
+  font-family: 'Raleway', 'Helvetica Nueu', sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+  color: #fff;
+}
+
+/* about us page */
+.main-content {
+  line-height: 1.8rem;
+}
+.sidebar.hours {
+  background-color: #8ed3cc;
+  color: #fff;
+}
+.sidebar.hours h2 {
+  color: #fff;
+}
