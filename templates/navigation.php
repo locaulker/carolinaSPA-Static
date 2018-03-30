@@ -5,7 +5,7 @@
       <ul class="nav nav-justified flex-column flex-sm-row">
         <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
         <li class="nav-item"><a href="about.php" class="nav-link">About Us</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="services.php" class="nav-link">Services</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
       </ul>

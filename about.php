@@ -22,20 +22,51 @@
 
       <p>The main condition is the health of the feet. In order for the knees to be beautiful, normal blood circulation and skin condition are necessary. To improve the condition of the legs you need to wear a good, matched shoes. Preference should be given to comfortable and soft shoes, and not to chase the newfangled trends. Modern women want to look beautiful and sexy.</p>
 
-      <div class="facilities-gallery" data-toggle="modal">
-        <a href="#" data-target="#image_1">
+      <div class="facilities-gallery">
+
+      <h3 class="text-center text-uppercase p-3"><span class="text-lowercase">Checkout our</span>facilities</h3>
+
+        <a href="#" data-target="#image_1" data-toggle="modal">
           <img src="img/gallery_thumb_01.jpg" class="rounded">
         </a>
+        <a href="#" data-target="#image_2" data-toggle="modal">
+          <img src="img/gallery_thumb_02.jpg" class="rounded">
+        </a>
+        <a href="#" data-target="#image_3" data-toggle="modal">
+          <img src="img/gallery_thumb_03.jpg" class="rounded">
+        </a>
+
         <div class="modal fade" id="image_1" tabindex="-1" role="dialog" aria-labelledby="image_1" aria-hidden="true">
           <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
               <div class="modal-body">
                 <img src="img/gallery_large_01.jpg" class="img-fluid">
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            </div><!-- .modal-content -->
+          </div><!-- .modal-dialog -->
+        </div><!-- .modal-content -->
+        <div class="modal fade" id="image_2" tabindex="-1" role="dialog" aria-labelledby="image_2" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="img/gallery_large_02.jpg" class="img-fluid">
+              </div>
+            </div><!-- .modal-content -->
+          </div><!-- .modal-dialog -->
+        </div><!-- .modal-content -->
+        <div class="modal fade" id="image_3" tabindex="-1" role="dialog" aria-labelledby="image_3" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="img/gallery_large_03.jpg" class="img-fluid">
+              </div>
+            </div><!-- .modal-content -->
+          </div><!-- .modal-dialog -->
+        </div><!-- .modal-content -->
+
+
+        
+      </div><!-- .facilities-galleryt -->
 
     </main>
     <aside class="col-lg-4 pt-4 pt-lg-0">
