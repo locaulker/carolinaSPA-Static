@@ -26,7 +26,9 @@
 
       <h3 class="text-center text-uppercase p-3"><span class="text-lowercase">Checkout our</span>facilities</h3>
 
-        <a href="#" data-target="#image_1" data-toggle="modal">
+        <div class="row">
+          <div class="col-12">
+          <a href="#" data-target="#image_1" data-toggle="modal">
           <img src="img/gallery_thumb_01.jpg" class="rounded">
         </a>
         <a href="#" data-target="#image_2" data-toggle="modal">
@@ -35,6 +37,9 @@
         <a href="#" data-target="#image_3" data-toggle="modal">
           <img src="img/gallery_thumb_03.jpg" class="rounded">
         </a>
+          </div>
+        </div>
+        
 
         <div class="modal fade" id="image_1" tabindex="-1" role="dialog" aria-labelledby="image_1" aria-hidden="true">
           <div class="modal-dialog modal-lg" role="document">

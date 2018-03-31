@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fontawesome.css">
     <link href="https://fonts.googleapis.com/css?family=Italianno|Lato:100,300,700,900|Raleway:100,200,300,400,600" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
