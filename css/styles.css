@@ -264,7 +264,8 @@ nav.main-nav .nav-link {
   font-size: 1.2rem;
   line-height: 1.6;
 }
-aside.discount {
+aside.discount,
+.product_description {
   background-color: #8ed3cc;
   color: #fff;
   -moz-background-clip: content-box;
@@ -272,7 +273,8 @@ aside.discount {
   background-clip: content-box;
   border-top: 1
 }
-aside.discount h3 {
+aside.discount h3,
+.product_description {
   color: #fff;
   border-bottom: 1px solid #fff;
   padding-bottom: 10px;
@@ -285,4 +287,26 @@ aside.discount .coupon p {
 }
 aside.discount .coupon p span {
   display: block;
+}
+
+/* Product */
+.price {
+  font-size: 2.5rem;
+}
+
+/* Contact Form */
+.contact-form {
+  border: 1px solid #d1d1d1;
+  background-color: #fff;
+}
+.contact-form .btn-primary {
+  background-color: #8ed3cc;
+  border: none;
+  padding: .8rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.contact-form .btn-primary:hover {
+  background-color: #6bbdb5;
 }

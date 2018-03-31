@@ -161,8 +161,6 @@
         </a>
       </div><!-- .card -->   
     </div><!-- .col-6 col-md-6 -->
-
-
   </div><!-- .row -->
   
 </div><!-- .container -->
