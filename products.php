@@ -19,109 +19,38 @@
     <h2 class="d-block d-md-none text-uppercase text-center">Products</h2>
 
     <div class="row products py-4">
-    <div class="col-6 col-md-3">
-      <div class="card mb-5">
-        <a href="#">
-          <img src="img/product_thumb_01.jpg" alt="" class="card-img-top img-fluid">
-          <div class="card-block">
-            <h3 class="card-title text-center text-uppercase my-2">Product 1</h3>
-            <p class="card-text text-uppercase">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, quidem.</p>
-            <p class="price text-center pb-3 mb-0">$25</p>
-          </div><!-- .card-block -->
-        </a>
-      </div><!-- .card -->   
-    </div><!-- .col-6 col-md-6 -->
-    <div class="col-6 col-md-3">
-      <div class="card mb-5">
-        <a href="#">
-          <img src="img/product_thumb_02.jpg" alt="" class="card-img-top img-fluid">
-          <div class="card-block">
-            <h3 class="card-title text-center text-uppercase my-2">Product 2</h3>
-            <p class="card-text text-uppercase">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, quidem.</p>
-            <p class="price text-center pb-3 mb-0">$45</p>
-          </div><!-- .card-block -->
-        </a>
-      </div><!-- .card -->   
-    </div><!-- .col-6 col-md-6 -->
-    <div class="col-6 col-md-3">
-      <div class="card mb-5">
-        <a href="#">
-          <img src="img/product_thumb_03.jpg" alt="" class="card-img-top img-fluid">
-          <div class="card-block">
-            <h3 class="card-title text-center text-uppercase my-2">Product 3</h3>
-            <p class="card-text text-uppercase">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, quidem.</p>
-            <p class="price text-center pb-3 mb-0">$55</p>
-          </div><!-- .card-block -->
-        </a>
-      </div><!-- .card -->   
-    </div><!-- .col-6 col-md-6 -->
-    <div class="col-6 col-md-3">
-      <div class="card mb-5">
-        <a href="#">
-          <img src="img/product_thumb_04.jpg" alt="" class="card-img-top img-fluid">
-          <div class="card-block">
-            <h3 class="card-title text-center text-uppercase my-2">Product 4</h3>
-            <p class="card-text text-uppercase">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, quidem.</p>
-            <p class="price text-center pb-3 mb-0">$60</p>
-          </div><!-- .card-block -->
-        </a>
-      </div><!-- .card -->   
-    </div><!-- .col-6 col-md-6 -->
-  </div><!-- .row -->
-  <div class="row">
-    <main class="col-12 main-content">
-    <h2 class="d-block d-md-none text-uppercase text-center">Products</h2>
+    
+    <?php
+    try {
+      require_once 'inc/db.php';
+      $sql = 'SELECT `id`, `name`, `image_thumb`, `price`, `short_description` FROM `products` ';
+      $result = $db->query($sql);
+    } catch (Exception $e) {
+      $error = $e->getMessage();
+    }
 
-    <div class="row products py-4">
-    <div class="col-6 col-md-3">
-      <div class="card mb-5">
-        <a href="#">
-          <img src="img/product_thumb_05.jpg" alt="" class="card-img-top img-fluid">
-          <div class="card-block">
-            <h3 class="card-title text-center text-uppercase my-2">Product 5</h3>
-            <p class="card-text text-uppercase">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, quidem.</p>
-            <p class="price text-center pb-3 mb-0">$25</p>
-          </div><!-- .card-block -->
-        </a>
-      </div><!-- .card -->   
-    </div><!-- .col-6 col-md-6 -->
-    <div class="col-6 col-md-3">
-      <div class="card mb-5">
-        <a href="#">
-          <img src="img/product_thumb_06.jpg" alt="" class="card-img-top img-fluid">
-          <div class="card-block">
-            <h3 class="card-title text-center text-uppercase my-2">Product 6</h3>
-            <p class="card-text text-uppercase">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, quidem.</p>
-            <p class="price text-center pb-3 mb-0">$45</p>
-          </div><!-- .card-block -->
-        </a>
-      </div><!-- .card -->   
-    </div><!-- .col-6 col-md-6 -->
-    <div class="col-6 col-md-3">
-      <div class="card mb-5">
-        <a href="#">
-          <img src="img/product_thumb_07.jpg" alt="" class="card-img-top img-fluid">
-          <div class="card-block">
-            <h3 class="card-title text-center text-uppercase my-2">Product 7</h3>
-            <p class="card-text text-uppercase">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, quidem.</p>
-            <p class="price text-center pb-3 mb-0">$55</p>
-          </div><!-- .card-block -->
-        </a>
-      </div><!-- .card -->   
-    </div><!-- .col-6 col-md-6 -->
-    <div class="col-6 col-md-3">
-      <div class="card mb-5">
-        <a href="#">
-          <img src="img/product_thumb_08.jpg" alt="" class="card-img-top img-fluid">
-          <div class="card-block">
-            <h3 class="card-title text-center text-uppercase my-2">Product 8</h3>
-            <p class="card-text text-uppercase">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, quidem.</p>
-            <p class="price text-center pb-3 mb-0">$60</p>
-          </div><!-- .card-block -->
-        </a>
-      </div><!-- .card -->   
-    </div><!-- .col-6 col-md-6 -->
-  </div><!-- .row -->
+    $rows = $result->num_rows;
+    if (!$rows) {
+      echo "No Results Found";
+    } else {
+      while($products = $result->fetch_assoc()) { ?>
+        <div class="col-6 col-md-3">
+          <div class="card mb-5">
+            <a href="product.php?product=<?php echo $products['id']; ?>">
+              <img src="img/<?php echo $products['image_thumb']; ?>" alt="" class="card-img-top img-fluid">
+              <div class="card-block">
+                <h3 class="card-title text-center text-uppercase my-2"><?php echo $products['name']; ?></h3>
+                <p class="card-text text-uppercase"><?php echo $products['short_description']; ?></p>
+                <p class="price text-center pb-3 mb-0">$<?php echo $products['price']; ?></p>
+              </div><!-- .card-block -->
+            </a>
+          </div><!-- .card --> 
+        </div> 
+    <?php   
+      }
+    } $db->close(); ?>
+
+    </div><!-- .row -->
     
 </div>
 </div>
